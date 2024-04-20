@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 1005;
+    min-height: 100%;
+    position: relative;
+    background-color: #d4d2d7;
+    padding-top: 0.1px;
+}
+
+#nav {
+
+    padding-top: 1px;
+    width: 100%;
+    height: 10vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+
+    h1 {
+        height: 100%;
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-family: 'monument' sans-serif;
+        letter-spacing: -5px;
+
+    }
+
+    h2 {
+        height: 100%;
+        width: 22%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid black;
+        font-weight: 500;
+        font-size: 22px;
+
+        &:nth-last-child(1) {
+            width: 10%;
+            border: none;
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    min-height: 90%;
+    padding: 3vw 5vw;
+    position: relative;
+
+    .content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+        }
+
+        .overlay {
+            height: 40%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: 3vw;
+            color: #fff;
+
+            .overlay-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2vw;
+
+                h1{
+                    font-size: 3vw;
+                   font-family: 'monument';                   
+                }
+                h2{
+                    border: 2px solid  grey;
+                    padding: 1.5vw;
+                    border-radius: 50%;
+                    border-right: 2px solid #fff;
+                }
+            }
+            .overlay-bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 2px solid #fff;
+
+
+                 img{
+                    width: 4vw;
+                }
+            }
+        }
+    }
+}

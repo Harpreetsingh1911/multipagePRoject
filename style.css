@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 1005;
+  min-height: 100%;
+  position: relative;
+  background-color: #d4d2d7;
+  padding-top: 0.1px;
+}
+
+#nav {
+  padding-top: 1px;
+  width: 100%;
+  height: 10vh;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  flex-wrap: wrap;
+}
+#nav h1 {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-family: "monument" sans-serif;
+  letter-spacing: -5px;
+}
+#nav h2 {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
+  font-weight: 500;
+  font-size: 22px;
+}
+#nav h2:nth-last-child(1) {
+  width: 10%;
+  border: none;
+}
+
+.hero {
+  width: 100%;
+  min-height: 90%;
+  padding: 3vw 5vw;
+  position: relative;
+}
+.hero .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero .content video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+.hero .content .overlay {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+  color: #fff;
+}
+.hero .content .overlay .overlay-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+.hero .content .overlay .overlay-top h1 {
+  font-size: 3vw;
+  font-family: "monument";
+}
+.hero .content .overlay .overlay-top h2 {
+  border: 2px solid grey;
+  padding: 1.5vw;
+  border-radius: 50%;
+  border-right: 2px solid #fff;
+}
+.hero .content .overlay .overlay-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fff;
+}
+.hero .content .overlay .overlay-bottom img {
+  width: 4vw;
+}/*# sourceMappingURL=style.css.map */
